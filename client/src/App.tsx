@@ -4,7 +4,7 @@ import Details, {Planets} from './components/Details';
 const App = () => {
   const [data, setData] = useState<Planets[]>([]);
   const fetchData = async () => {
-    const response = await fetch('http://localhost:4001')
+    const response = await fetch('https://planets-fevx.onrender.com')
     .then(res => res.json())
     .catch(err => console.log(err))
 
